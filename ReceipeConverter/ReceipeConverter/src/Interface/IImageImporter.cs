@@ -5,9 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 
 
-public interface PhotoImporter
+public interface IImageImporter
 {
-    bool IsValidFile(string path);
-    
+    public IReadOnlyCollection<String> GetImages(String path);
 }
 
