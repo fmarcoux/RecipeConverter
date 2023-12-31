@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace ReceipeConverter.src.Classe
 {
-    internal class CDiskImageImporter : IImageImporter
+    public class CDiskImageImporter : IImageImporter
     {
         private readonly IReadOnlyCollection<string> m_allowedExtension;
 
@@ -34,7 +34,7 @@ namespace ReceipeConverter.src.Classe
             });
         }
 
-        public CDiskImageImporter(IReadOnlyCollection<string> allowedExtension_) => m_allowedExtension = allowedExtension_;
+        private CDiskImageImporter(IReadOnlyCollection<string> allowedExtension_) => m_allowedExtension = allowedExtension_;
 
         public IReadOnlyCollection<String> GetImages(String directory) 
         {
@@ -44,7 +44,7 @@ namespace ReceipeConverter.src.Classe
                 var a = m_allowedExtension.FirstOrDefault(extension => file.Contains(extension, StringComparison.OrdinalIgnoreCase));
                 if(a != default)
                 {
-                    imagesPath.Add(a);
+                    imagesPath.Add(file);
                 }
             }
             return imagesPath;

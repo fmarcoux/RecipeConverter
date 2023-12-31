@@ -1,0 +1,56 @@
+{
+  "name": "Ceci est un nom de fucking test yo2",
+  "description": "Galettes de patates douces et tofu",
+  "keywords": [],
+  "steps": [
+    {
+      "name": "",
+      "instruction": "Galettes  \nPlacer la grille au centre du four. Préchauffer le four à 180 °C (350 °F). Tapisser une plaque de cuisson d’un tapis de silicone ou de papier parchemin.  \nDans un bol, mélanger tous les ingrédients, sauf l’huile. Saler légèrement et poivrer.  \nDans une grande poêle antiadhésive à feu moyen, chauffer l’huile. À l’aide d’une cuillère à crème glacée de 60 ml (1/4 tasse), y déposer des boules de pâte en les écrasant légèrement. Lorsque les galettes sont bien dorées, les retourner délicatement à l’aide d’une spatule. Éponger les galettes sur du papier absorbant avant de les déposer sur la plaque.  \nCuire au four 10 minutes ou jusqu’à ce que les galettes soient bien cuites.  \nGarniture  \nEntre-temps, dans un petit bol, mélanger le tzatziki et la menthe. Saler et poivrer. Servir les galettes chaudes ou froides avec le tzatziki. Accompagner d’une salade verte, si désiré.",
+      "ingredients": [
+        {
+          "food": {
+            "name": "YII pelée et râpée",
+            "description": "",
+            "ignore_shopping": false
+          },
+          "unit": {
+            "name": "g"
+          },
+          "amount": 250.0,
+          "note": "44 tasses",
+          "original_text": "250 g (2 tasses) de patate douce pelée et râpée"
+        },
+        {
+          "food": {
+            "name": "de patate douce pelée et râpée",
+            "description": "",
+            "ignore_shopping": false
+          },
+          "unit": {
+            "name": "g"
+          },
+          "amount": 250.0,
+          "note": "2 tasses",
+          "original_text": "250 g (2 tasses) de patate douce pelée et râpée"
+        }
+
+      ]
+    }
+  ],
+  "source_url": "IMPORTED FROM FRANKS CUSTOM RECIPE IMPORTER",
+  "working_time": 25,
+  "waiting_time": 20,
+  "created_by": 1,
+  "created_at": "2023-09-08T18:37:59.684694-04:00",
+  "updated_at": "2023-09-08T18:38:00.629708-04:00",
+  "internal": true,
+  "show_ingredient_overview": true,
+  "nutrition": null,
+  "servings": 4,
+  "file_path": "",
+  "servings_text": "portion(s)",
+  "rating": null,
+  "last_cooked": null,
+  "private": false,
+  "shared": []
+}

@@ -1,0 +1,252 @@
+{
+	"info": {
+		"_postman_id": "3d973b14-70c4-4cb3-ad16-b5d37194d9e2",
+		"name": "Tandoor api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29622443"
+	},
+	"item": [
+		{
+			"name": "new recipe",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"string\",\r\n    \"description\": \"string\",\r\n    \"keywords\": [\r\n        {\r\n            \"name\": \"string\",\r\n            \"icon\": \"string\",\r\n            \"description\": \"string\"\r\n        }\r\n    ],\r\n    \"steps\": [\r\n        {\r\n            \"name\": \"string\",\r\n            \"instruction\": \"string\",\r\n            \"ingredients\": [\r\n                {\r\n                    \"food\": {\r\n                        \"name\": \"string\",\r\n                        \"plural_name\": \"string\",\r\n                        \"description\": \"string\",\r\n                        \"recipe\": {\r\n                            \"name\": \"string\"\r\n                        },\r\n                        \"food_onhand\": \"string\",\r\n                        \"supermarket_category\": {\r\n                            \"name\": \"string\",\r\n                            \"description\": \"string\"\r\n                        },\r\n                        \"inherit_fields\": [\r\n                            {\r\n                                \"name\": \"string\",\r\n                                \"field\": \"string\"\r\n                            }\r\n                        ],\r\n                        \"ignore_shopping\": true,\r\n                        \"substitute\": [\r\n                            {\r\n                                \"name\": \"string\",\r\n                                \"plural_name\": \"string\"\r\n                            }\r\n                        ],\r\n                        \"substitute_siblings\": true,\r\n                        \"substitute_children\": true,\r\n                        \"child_inherit_fields\": [\r\n                            {\r\n                                \"name\": \"string\",\r\n                                \"field\": \"string\"\r\n                            }\r\n                        ]\r\n                    },\r\n                    \"unit\": {\r\n                        \"name\": \"string\",\r\n                        \"plural_name\": \"string\",\r\n                        \"description\": \"string\"\r\n                    },\r\n                    \"amount\": \"1\",\r\n                    \"note\": \"string\",\r\n                    \"order\": -2147483648,\r\n                    \"is_header\": true,\r\n                    \"no_amount\": true,\r\n                    \"original_text\": \"string\",\r\n                    \"always_use_plural_unit\": true,\r\n                    \"always_use_plural_food\": true\r\n                }\r\n            ],\r\n            \"time\": -2147483648,\r\n            \"order\": -2147483648,\r\n            \"show_as_header\": true,\r\n            \"file\": {\r\n                \"name\":\"Test user file\",\r\n                \"file\":\"http://192.168.1.108:8080/media/files/0b31120e-c582-4f69-9491-807ec8e873ac.jpg\",\r\n                \"id\":1\r\n            },\r\n            \"step_recipe\": 1\r\n        }\r\n    ],\r\n    \"working_time\": -2147483648,\r\n    \"waiting_time\": -2147483648,\r\n    \"source_url\": \"string\",\r\n    \"internal\": true,\r\n    \"show_ingredient_overview\": true,\r\n    \"nutrition\": {\r\n        \"carbohydrates\": \"1\",\r\n        \"fats\": \"2\",\r\n        \"proteins\": \"3\",\r\n        \"calories\": \"4\",\r\n        \"source\": \"5\"\r\n    },\r\n    \"servings\": -2147483648,\r\n    \"file_path\": \"string\",\r\n    \"servings_text\": \"string\",\r\n    \"private\": true,\r\n    \"shared\": [\r\n        {\r\n            \"first_name\": \"string\",\r\n            \"last_name\": \"string\"\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "192.168.1.108:8080/api/recipe/",
+					"host": [
+						"192",
+						"168",
+						"1",
+						"108"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"recipe",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "new recipe test",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Ceci est un nom de fucking test yo2\",\r\n    \"description\": \"Galettes de patates douces et tofu\",\r\n    \"image\": \"http://192.168.1.108:8080/media/recipes/9c71c7e4-6d3a-48f2-ad36-e57141b0e64b_56.jpg\",\r\n    \"keywords\": [],\r\n    \"steps\": [\r\n        {\r\n            \"name\": \"\",\r\n            \"instruction\": \"Galettes  \\nPlacer la grille au centre du four. Préchauffer le four à 180 °C (350 °F). Tapisser une plaque de cuisson d’un tapis de silicone ou de papier parchemin.  \\nDans un bol, mélanger tous les ingrédients, sauf l’huile. Saler légèrement et poivrer.  \\nDans une grande poêle antiadhésive à feu moyen, chauffer l’huile. À l’aide d’une cuillère à crème glacée de 60 ml (1/4 tasse), y déposer des boules de pâte en les écrasant légèrement. Lorsque les galettes sont bien dorées, les retourner délicatement à l’aide d’une spatule. Éponger les galettes sur du papier absorbant avant de les déposer sur la plaque.  \\nCuire au four 10 minutes ou jusqu’à ce que les galettes soient bien cuites.  \\nGarniture  \\nEntre-temps, dans un petit bol, mélanger le tzatziki et la menthe. Saler et poivrer. Servir les galettes chaudes ou froides avec le tzatziki. Accompagner d’une salade verte, si désiré.\",\r\n            \"ingredients\": [\r\n                {\r\n                    \"food\": {\r\n                        \"name\": \"de patate douce pelée et râpée\",\r\n                        \"plural_name\": null,\r\n                        \"description\": \"\",\r\n                        \"recipe\": null,\r\n                        \"food_onhand\": false,\r\n                        \"supermarket_category\": null,\r\n                        \"parent\": null,\r\n                        \"numchild\": 0,\r\n                        \"inherit_fields\": [],\r\n                        \"full_name\": \"de patate douce pelée et râpée\",\r\n                        \"ignore_shopping\": false,\r\n                        \"substitute\": [],\r\n                        \"substitute_siblings\": false,\r\n                        \"substitute_children\": false,\r\n                        \"substitute_onhand\": false,\r\n                        \"child_inherit_fields\": []\r\n                    },\r\n                    \"unit\": {\r\n                        \"name\": \"g\",\r\n                        \"plural_name\": null,\r\n                        \"description\": null\r\n                    },\r\n                    \"amount\": 250.0,\r\n                    \"note\": \"2 tasses\",\r\n                    \"order\": 0,\r\n                    \"is_header\": false,\r\n                    \"no_amount\": false,\r\n                    \"original_text\": \"250 g (2 tasses) de patate douce pelée et râpée\",\r\n                    \"used_in_recipes\": [],\r\n                    \"always_use_plural_unit\": false,\r\n                    \"always_use_plural_food\": false\r\n                },\r\n                {\r\n                    \"food\": {\r\n                        \"name\": \"de tofu ferme, épongé et râpé\",\r\n                        \"plural_name\": null,\r\n                        \"description\": \"\",\r\n                        \"recipe\": null,\r\n                        \"food_onhand\": false,\r\n                        \"supermarket_category\": null,\r\n                        \"parent\": null,\r\n                        \"numchild\": 0,\r\n                        \"inherit_fields\": [],\r\n                        \"full_name\": \"de tofu ferme, épongé et râpé\",\r\n                        \"ignore_shopping\": false,\r\n                        \"substitute\": [],\r\n                        \"substitute_siblings\": false,\r\n                        \"substitute_children\": false,\r\n                        \"substitute_onhand\": false,\r\n                        \"child_inherit_fields\": []\r\n                    },\r\n                    \"unit\": {\r\n                        \"name\": \"g\",\r\n                        \"plural_name\": null,\r\n                        \"description\": null\r\n                    },\r\n                    \"amount\": 170.0,\r\n                    \"note\": \"6 oz\",\r\n                    \"order\": 0,\r\n                    \"is_header\": false,\r\n                    \"no_amount\": false,\r\n                    \"original_text\": \"170 g (6 oz) de tofu ferme, épongé et râpé\",\r\n                    \"used_in_recipes\": [],\r\n                    \"always_use_plural_unit\": false,\r\n                    \"always_use_plural_food\": false\r\n                },\r\n                {\r\n                    \"food\": {\r\n                        \"name\": \"(1 tasse) de fromage feta émietté grossièrement\",\r\n                        \"plural_name\": null,\r\n                        \"description\": \"\",\r\n                        \"recipe\": null,\r\n                        \"food_onhand\": false,\r\n                        \"supermarket_category\": null,\r\n                        \"parent\": null,\r\n                        \"numchild\": 0,\r\n                        \"inherit_fields\": [],\r\n                        \"full_name\": \"(1 tasse) de fromage feta émietté grossièrement\",\r\n                        \"ignore_shopping\": false,\r\n                        \"substitute\": [],\r\n                        \"substitute_siblings\": false,\r\n                        \"substitute_children\": false,\r\n                        \"substitute_onhand\": false,\r\n                        \"child_inherit_fields\": []\r\n                    },\r\n                    \"unit\": {\r\n                        \"name\": \"g\",\r\n                        \"plural_name\": null,\r\n                        \"description\": null\r\n                    },\r\n                    \"amount\": 120.0,\r\n                    \"note\": \"\",\r\n                    \"order\": 0,\r\n                    \"is_header\": false,\r\n                    \"no_amount\": false,\r\n                    \"original_text\": \"120 g (1 tasse) de fromage feta émietté grossièrement\",\r\n                    \"used_in_recipes\": [],\r\n                    \"always_use_plural_unit\": false,\r\n                    \"always_use_plural_food\": false\r\n                },\r\n                {\r\n                    \"food\": {\r\n                        \"name\": \"(1/2 tasse) de farine tout usage non blanchie\",\r\n                        \"plural_name\": null,\r\n                        \"description\": \"\",\r\n                        \"recipe\": null,\r\n                        \"food_onhand\": false,\r\n                        \"supermarket_category\": null,\r\n                        \"parent\": null,\r\n                        \"numchild\": 0,\r\n                        \"inherit_fields\": [],\r\n                        \"full_name\": \"(1/2 tasse) de farine tout usage non blanchie\",\r\n                        \"ignore_shopping\": false,\r\n                        \"substitute\": [],\r\n                        \"substitute_siblings\": false,\r\n                        \"substitute_children\": false,\r\n                        \"substitute_onhand\": false,\r\n                        \"child_inherit_fields\": []\r\n                    },\r\n                    \"unit\": {\r\n                        \"name\": \"g\",\r\n                        \"plural_name\": null,\r\n                        \"description\": null\r\n                    },\r\n                    \"amount\": 75.0,\r\n                    \"note\": \"\",\r\n                    \"order\": 0,\r\n                    \"is_header\": false,\r\n                    \"no_amount\": false,\r\n                    \"original_text\": \"75 g (1/2 tasse) de farine tout usage non blanchie\",\r\n                    \"used_in_recipes\": [],\r\n                    \"always_use_plural_unit\": false,\r\n                    \"always_use_plural_food\": false\r\n                },\r\n                {\r\n                    \"food\": {\r\n                        \"name\": \"(1/4 tasse) de coriandre ciselée\",\r\n                        \"plural_name\": null,\r\n                        \"description\": \"\",\r\n                        \"recipe\": null,\r\n                        \"food_onhand\": false,\r\n                        \"supermarket_category\": null,\r\n                        \"parent\": null,\r\n                        \"numchild\": 0,\r\n                        \"inherit_fields\": [],\r\n                        \"full_name\": \"(1/4 tasse) de coriandre ciselée\",\r\n                        \"ignore_shopping\": false,\r\n                        \"substitute\": [],\r\n                        \"substitute_siblings\": false,\r\n                        \"substitute_children\": false,\r\n                        \"substitute_onhand\": false,\r\n                        \"child_inherit_fields\": []\r\n                    },\r\n                    \"unit\": {\r\n                        \"name\": \"g\",\r\n                        \"plural_name\": null,\r\n                        \"description\": null\r\n                    },\r\n                    \"amount\": 10.0,\r\n                    \"note\": \"\",\r\n                    \"order\": 0,\r\n                    \"is_header\": false,\r\n                    \"no_amount\": false,\r\n                    \"original_text\": \"10 g (1/4 tasse) de coriandre ciselée\",\r\n                    \"used_in_recipes\": [],\r\n                    \"always_use_plural_unit\": false,\r\n                    \"always_use_plural_food\": false\r\n                },\r\n                {\r\n                    \"food\": {\r\n                        \"name\": \"œufs\",\r\n                        \"plural_name\": null,\r\n                        \"description\": \"\",\r\n                        \"recipe\": null,\r\n                        \"food_onhand\": false,\r\n                        \"supermarket_category\": null,\r\n                        \"parent\": null,\r\n                        \"numchild\": 0,\r\n                        \"inherit_fields\": [],\r\n                        \"full_name\": \"œufs\",\r\n                        \"ignore_shopping\": false,\r\n                        \"substitute\": [],\r\n                        \"substitute_siblings\": false,\r\n                        \"substitute_children\": false,\r\n                        \"substitute_onhand\": false,\r\n                        \"child_inherit_fields\": []\r\n                    },\r\n                    \"unit\": null,\r\n                    \"amount\": 5.0,\r\n                    \"note\": \"battus\",\r\n                    \"order\": 0,\r\n                    \"is_header\": false,\r\n                    \"no_amount\": false,\r\n                    \"original_text\": \"5 œufs, battus\",\r\n                    \"used_in_recipes\": [],\r\n                    \"always_use_plural_unit\": false,\r\n                    \"always_use_plural_food\": false\r\n                },\r\n                {\r\n                    \"food\": {\r\n                        \"name\": \"verts\",\r\n                        \"plural_name\": null,\r\n                        \"description\": \"\",\r\n                        \"recipe\": null,\r\n                        \"food_onhand\": false,\r\n                        \"supermarket_category\": null,\r\n                        \"parent\": null,\r\n                        \"numchild\": 0,\r\n                        \"inherit_fields\": [],\r\n                        \"full_name\": \"verts\",\r\n                        \"ignore_shopping\": false,\r\n                        \"substitute\": [],\r\n                        \"substitute_siblings\": false,\r\n                        \"substitute_children\": false,\r\n                        \"substitute_onhand\": false,\r\n                        \"child_inherit_fields\": []\r\n                    },\r\n                    \"unit\": {\r\n                        \"name\": \"oignons\",\r\n                        \"plural_name\": null,\r\n                        \"description\": null\r\n                    },\r\n                    \"amount\": 2.0,\r\n                    \"note\": \"hachés\",\r\n                    \"order\": 0,\r\n                    \"is_header\": false,\r\n                    \"no_amount\": false,\r\n                    \"original_text\": \"2 oignons verts, hachés\",\r\n                    \"used_in_recipes\": [],\r\n                    \"always_use_plural_unit\": false,\r\n                    \"always_use_plural_food\": false\r\n                },\r\n                {\r\n                    \"food\": {\r\n                        \"name\": \"de graines de coriandre moulues\",\r\n                        \"plural_name\": null,\r\n                        \"description\": \"\",\r\n                        \"recipe\": null,\r\n                        \"food_onhand\": false,\r\n                        \"supermarket_category\": null,\r\n                        \"parent\": null,\r\n                        \"numchild\": 0,\r\n                        \"inherit_fields\": [],\r\n                        \"full_name\": \"de graines de coriandre moulues\",\r\n                        \"ignore_shopping\": false,\r\n                        \"substitute\": [],\r\n                        \"substitute_siblings\": false,\r\n                        \"substitute_children\": false,\r\n                        \"substitute_onhand\": false,\r\n                        \"child_inherit_fields\": []\r\n                    },\r\n                    \"unit\": {\r\n                        \"name\": \"ml\",\r\n                        \"plural_name\": null,\r\n                        \"description\": null\r\n                    },\r\n                    \"amount\": 2.5,\r\n                    \"note\": \"1/2 c. à thé\",\r\n                    \"order\": 0,\r\n                    \"is_header\": false,\r\n                    \"no_amount\": false,\r\n                    \"original_text\": \"2,5 ml (1/2 c. à thé) de graines de coriandre moulues\",\r\n                    \"used_in_recipes\": [],\r\n                    \"always_use_plural_unit\": false,\r\n                    \"always_use_plural_food\": false\r\n                },\r\n                {\r\n                    \"food\": {\r\n                        \"name\": \"de piment de Cayenne\",\r\n                        \"plural_name\": null,\r\n                        \"description\": \"\",\r\n                        \"recipe\": null,\r\n                        \"food_onhand\": false,\r\n                        \"supermarket_category\": null,\r\n                        \"parent\": null,\r\n                        \"numchild\": 0,\r\n                        \"inherit_fields\": [],\r\n                        \"full_name\": \"de piment de Cayenne\",\r\n                        \"ignore_shopping\": false,\r\n                        \"substitute\": [],\r\n                        \"substitute_siblings\": false,\r\n                        \"substitute_children\": false,\r\n                        \"substitute_onhand\": false,\r\n                        \"child_inherit_fields\": []\r\n                    },\r\n                    \"unit\": {\r\n                        \"id\": 48,\r\n                        \"name\": \"pincée\",\r\n                        \"plural_name\": null,\r\n                        \"description\": null\r\n                    },\r\n                    \"amount\": 1.0,\r\n                    \"note\": \"\",\r\n                    \"order\": 0,\r\n                    \"is_header\": false,\r\n                    \"no_amount\": false,\r\n                    \"original_text\": \"1 pincée de piment de Cayenne\",\r\n                    \"used_in_recipes\": [],\r\n                    \"always_use_plural_unit\": false,\r\n                    \"always_use_plural_food\": false\r\n                },\r\n                {\r\n                    \"food\": {\r\n                        \"name\": \"d’huile végétale\",\r\n                        \"plural_name\": null,\r\n                        \"description\": \"\",\r\n                        \"recipe\": null,\r\n                        \"food_onhand\": false,\r\n                        \"supermarket_category\": null,\r\n                        \"parent\": null,\r\n                        \"numchild\": 0,\r\n                        \"inherit_fields\": [],\r\n                        \"full_name\": \"d’huile végétale\",\r\n                        \"ignore_shopping\": false,\r\n                        \"substitute\": [],\r\n                        \"substitute_siblings\": false,\r\n                        \"substitute_children\": false,\r\n                        \"substitute_onhand\": false,\r\n                        \"child_inherit_fields\": []\r\n                    },\r\n                    \"unit\": {\r\n                        \"name\": \"ml\",\r\n                        \"plural_name\": null,\r\n                        \"description\": null\r\n                    },\r\n                    \"amount\": 30.0,\r\n                    \"note\": \"2 c. à soupe\",\r\n                    \"order\": 0,\r\n                    \"is_header\": false,\r\n                    \"no_amount\": false,\r\n                    \"original_text\": \"30 ml (2 c. à soupe) d’huile végétale\",\r\n                    \"used_in_recipes\": [],\r\n                    \"always_use_plural_unit\": false,\r\n                    \"always_use_plural_food\": false\r\n                },\r\n                {\r\n                    \"food\": {\r\n                        \"name\": \"(1 tasse) de tzatziki maison ou du commerce\",\r\n                        \"plural_name\": null,\r\n                        \"description\": \"\",\r\n                        \"recipe\": null,\r\n                        \"food_onhand\": false,\r\n                        \"supermarket_category\": null,\r\n                        \"parent\": null,\r\n                        \"numchild\": 0,\r\n                        \"inherit_fields\": [],\r\n                        \"full_name\": \"(1 tasse) de tzatziki maison ou du commerce\",\r\n                        \"ignore_shopping\": false,\r\n                        \"substitute\": [],\r\n                        \"substitute_siblings\": false,\r\n                        \"substitute_children\": false,\r\n                        \"substitute_onhand\": false,\r\n                        \"child_inherit_fields\": []\r\n                    },\r\n                    \"unit\": {\r\n                        \"name\": \"ml\",\r\n                        \"plural_name\": null,\r\n                        \"description\": null\r\n                    },\r\n                    \"amount\": 250.0,\r\n                    \"note\": \"\",\r\n                    \"order\": 0,\r\n                    \"is_header\": false,\r\n                    \"no_amount\": false,\r\n                    \"original_text\": \"250 ml (1 tasse) de tzatziki maison ou du commerce\",\r\n                    \"used_in_recipes\": [],\r\n                    \"always_use_plural_unit\": false,\r\n                    \"always_use_plural_food\": false\r\n                },\r\n                {\r\n                    \"food\": {\r\n                        \"name\": \"de menthe ciselée\",\r\n                        \"plural_name\": null,\r\n                        \"description\": \"\",\r\n                        \"recipe\": null,\r\n                        \"food_onhand\": false,\r\n                        \"supermarket_category\": null,\r\n                        \"parent\": null,\r\n                        \"numchild\": 0,\r\n                        \"inherit_fields\": [],\r\n                        \"full_name\": \"de menthe ciselée\",\r\n                        \"ignore_shopping\": false,\r\n                        \"substitute\": [],\r\n                        \"substitute_siblings\": false,\r\n                        \"substitute_children\": false,\r\n                        \"substitute_onhand\": false,\r\n                        \"child_inherit_fields\": []\r\n                    },\r\n                    \"unit\": {\r\n                        \"name\": \"ml\",\r\n                        \"plural_name\": null,\r\n                        \"description\": null\r\n                    },\r\n                    \"amount\": 15.0,\r\n                    \"note\": \"1 c. à soupe\",\r\n                    \"order\": 0,\r\n                    \"is_header\": false,\r\n                    \"no_amount\": false,\r\n                    \"original_text\": \"15 ml (1 c. à soupe) de menthe ciselée\",\r\n                    \"used_in_recipes\": [],\r\n                    \"always_use_plural_unit\": false,\r\n                    \"always_use_plural_food\": false\r\n                }\r\n            ],\r\n            \"time\": 0,\r\n            \"order\": 0,\r\n            \"show_as_header\": true,\r\n            \"file\": null,\r\n            \"step_recipe\": null,\r\n            \"step_recipe_data\": null\r\n        }\r\n    ],\r\n    \"working_time\": 25,\r\n    \"waiting_time\": 20,\r\n    \"created_by\": 1,\r\n    \"created_at\": \"2023-09-08T18:37:59.684694-04:00\",\r\n    \"updated_at\": \"2023-09-08T18:38:00.629708-04:00\",\r\n    \"internal\": true,\r\n    \"show_ingredient_overview\": true,\r\n    \"nutrition\": null,\r\n    \"servings\": 4,\r\n    \"file_path\": \"\",\r\n    \"servings_text\": \"portion(s)\",\r\n    \"rating\": null,\r\n    \"last_cooked\": null,\r\n    \"private\": false,\r\n    \"shared\": []\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "192.168.1.108:8080/api/recipe/",
+					"host": [
+						"192",
+						"168",
+						"1",
+						"108"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"recipe",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "NewRecipeFieldTest",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Ceci est un nom de fucking test yo2\",\r\n    \"description\": \"Galettes de patates douces et tofu\",\r\n    \"keywords\": [],\r\n\t\"steps\": [\r\n        {\r\n            \"name\": \"\",\r\n            \"instruction\": \"Galettes  \\nPlacer la grille au centre du four. Préchauffer le four à 180 °C (350 °F). Tapisser une plaque de cuisson d’un tapis de silicone ou de papier parchemin.  \\nDans un bol, mélanger tous les ingrédients, sauf l’huile. Saler légèrement et poivrer.  \\nDans une grande poêle antiadhésive à feu moyen, chauffer l’huile. À l’aide d’une cuillère à crème glacée de 60 ml (1/4 tasse), y déposer des boules de pâte en les écrasant légèrement. Lorsque les galettes sont bien dorées, les retourner délicatement à l’aide d’une spatule. Éponger les galettes sur du papier absorbant avant de les déposer sur la plaque.  \\nCuire au four 10 minutes ou jusqu’à ce que les galettes soient bien cuites.  \\nGarniture  \\nEntre-temps, dans un petit bol, mélanger le tzatziki et la menthe. Saler et poivrer. Servir les galettes chaudes ou froides avec le tzatziki. Accompagner d’une salade verte, si désiré.\",\r\n            \"ingredients\": [\r\n                {\r\n                    \"food\": {\r\n                        \"name\": \"YII pelée et râpée\",\r\n                        \"description\": \"\",\r\n                        \"ignore_shopping\": false\r\n                    },\r\n                    \"unit\": {\r\n                        \"name\": \"g\"\r\n                    },\r\n                    \"amount\": 250.0,\r\n                    \"note\": \"44 tasses\",\r\n                    \"original_text\": \"250 g (2 tasses) de patate douce pelée et râpée\"\r\n                },\r\n                {\r\n                    \"food\": {\r\n                        \"name\": \"de patate douce pelée et râpée\",\r\n                        \"description\": \"\",\r\n                        \"ignore_shopping\": false\r\n                    },\r\n                    \"unit\": {\r\n                        \"name\": \"g\"\r\n                    },\r\n                    \"amount\": 250.0,\r\n                    \"note\": \"2 tasses\",\r\n                    \"original_text\": \"250 g (2 tasses) de patate douce pelée et râpée\"\r\n                }\r\n        \r\n            ]\r\n        }\r\n    ],\r\n    \"source_url\": \"IMPORTED FROM FRANKS CUSTOM RECIPE IMPORTER\",\r\n    \"working_time\": 25,\r\n    \"waiting_time\": 20,\r\n    \"created_by\": 1,\r\n    \"created_at\": \"2023-09-08T18:37:59.684694-04:00\",\r\n    \"updated_at\": \"2023-09-08T18:38:00.629708-04:00\",\r\n    \"internal\": true,\r\n    \"show_ingredient_overview\": true,\r\n    \"nutrition\": null,\r\n    \"servings\": 4,\r\n    \"file_path\": \"\",\r\n    \"servings_text\": \"portion(s)\",\r\n    \"rating\": null,\r\n    \"last_cooked\": null,\r\n    \"private\": false,\r\n    \"shared\": []\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{ServerIP}}/api/recipe/",
+					"host": [
+						"{{ServerIP}}"
+					],
+					"path": [
+						"api",
+						"recipe",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "NewRecipeValidFormat",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Ceci est un nom de fucking test yo2\",\r\n    \"description\": \"Galettes de patates douces et tofu\",\r\n    \"keywords\": [],\r\n\t\"steps\": [\r\n        {\r\n            \"name\": \"\",\r\n            \"instruction\": \"Galettes  \\nPlacer la grille au centre du four. Préchauffer le four à 180 °C (350 °F). Tapisser une plaque de cuisson d’un tapis de silicone ou de papier parchemin.  \\nDans un bol, mélanger tous les ingrédients, sauf l’huile. Saler légèrement et poivrer.  \\nDans une grande poêle antiadhésive à feu moyen, chauffer l’huile. À l’aide d’une cuillère à crème glacée de 60 ml (1/4 tasse), y déposer des boules de pâte en les écrasant légèrement. Lorsque les galettes sont bien dorées, les retourner délicatement à l’aide d’une spatule. Éponger les galettes sur du papier absorbant avant de les déposer sur la plaque.  \\nCuire au four 10 minutes ou jusqu’à ce que les galettes soient bien cuites.  \\nGarniture  \\nEntre-temps, dans un petit bol, mélanger le tzatziki et la menthe. Saler et poivrer. Servir les galettes chaudes ou froides avec le tzatziki. Accompagner d’une salade verte, si désiré.\",\r\n            \"ingredients\": [\r\n                {\r\n                    \"food\": {\r\n                        \"name\": \"YII pelée et râpée\",\r\n                        \"description\": \"\",\r\n                        \"ignore_shopping\": false\r\n                    },\r\n                    \"unit\": {\r\n                        \"name\": \"g\"\r\n                    },\r\n                    \"amount\": 250.0,\r\n                    \"note\": \"44 tasses\",\r\n                    \"original_text\": \"250 g (2 tasses) de patate douce pelée et râpée\"\r\n                },\r\n                {\r\n                    \"food\": {\r\n                        \"name\": \"de patate douce pelée et râpée\",\r\n                        \"description\": \"\",\r\n                        \"ignore_shopping\": false\r\n                    },\r\n                    \"unit\": {\r\n                        \"name\": \"g\"\r\n                    },\r\n                    \"amount\": 250.0,\r\n                    \"note\": \"2 tasses\",\r\n                    \"original_text\": \"250 g (2 tasses) de patate douce pelée et râpée\"\r\n                }\r\n        \r\n            ]\r\n        }\r\n    ],\r\n    \"source_url\": \"IMPORTED FROM FRANKS CUSTOM RECIPE IMPORTER\",\r\n    \"working_time\": 25,\r\n    \"waiting_time\": 20,\r\n    \"created_by\": 1,\r\n    \"created_at\": \"2023-09-08T18:37:59.684694-04:00\",\r\n    \"updated_at\": \"2023-09-08T18:38:00.629708-04:00\",\r\n    \"internal\": true,\r\n    \"show_ingredient_overview\": true,\r\n    \"nutrition\": null,\r\n    \"servings\": 4,\r\n    \"file_path\": \"\",\r\n    \"servings_text\": \"portion(s)\",\r\n    \"rating\": null,\r\n    \"last_cooked\": null,\r\n    \"private\": false,\r\n    \"shared\": []\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{ServerIP}}/api/recipe/",
+					"host": [
+						"{{ServerIP}}"
+					],
+					"path": [
+						"api",
+						"recipe",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create new token api",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"frank\",\r\n    \"password\": \"s5qdHZQBWVjJDe7\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "192.168.1.108:8080/api-token-auth/",
+					"host": [
+						"192",
+						"168",
+						"1",
+						"108"
+					],
+					"port": "8080",
+					"path": [
+						"api-token-auth",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create user file not working",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Test user file",
+							"type": "text"
+						},
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/C:/Users/frank/OneDrive/Bureau/This i fine.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "192.168.1.108:8080/api/user-file/",
+					"host": [
+						"192",
+						"168",
+						"1",
+						"108"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"user-file",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "list recipe",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "retrieve recipe",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "tda_8e6e1bcd_94c9_4cda_8650_0448acffc3d5",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "ServerIP",
+			"value": "http://serverfrank.tailebdba.ts.net/",
+			"type": "string"
+		}
+	]
+}
