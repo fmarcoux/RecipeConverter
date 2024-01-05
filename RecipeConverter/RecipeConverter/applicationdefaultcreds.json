@@ -1,0 +1,7 @@
+{
+  "client_id": "CLIENT ID",
+  "client_secret": "CLIENT SECRET",
+  "quota_project_id": "project id",
+  "refresh_token": "refresh token",
+  "type": "type"
+}

@@ -1,6 +1,10 @@
-﻿using System.Text.Json.Serialization;
+﻿using Newtonsoft.Json;
+using System.ComponentModel.DataAnnotations;
+using System.Diagnostics.CodeAnalysis;
+using System.Text.Json;
+using System.Text.Json.Serialization;
 
-namespace ReceipeConverter.src.DTO.TandoorRecipe
+namespace RecipeConverter.src.DTO.TandoorRecipe
 {
 
     public class ChildInheritField
@@ -65,17 +69,25 @@ namespace ReceipeConverter.src.DTO.TandoorRecipe
 
     public class Ingredient
     {
+        
         [JsonPropertyName("food")]
         public Food Food { get; set; }
 
+        
         [JsonPropertyName("unit")]
         public Unit Unit { get; set; }
 
+       
         [JsonPropertyName("amount")]
-        public string Amount { get; set; }
+        public double Amount { get; set; }
 
+        
         [JsonPropertyName("note")]
         public string? Note { get; set; }
+
+        
+        [JsonPropertyName("original_text")]
+        public string? OriginalText { get; set; }
 
         [JsonPropertyName("order")]
         public int? Order { get; set; }
@@ -85,9 +97,6 @@ namespace ReceipeConverter.src.DTO.TandoorRecipe
 
         [JsonPropertyName("no_amount")]
         public bool? NoAmount { get; set; }
-
-        [JsonPropertyName("original_text")]
-        public string? OriginalText { get; set; }
 
         [JsonPropertyName("always_use_plural_unit")]
         public bool? AlwaysUsePluralUnit { get; set; }

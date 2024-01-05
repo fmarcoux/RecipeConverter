@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Google.Cloud.Vision.V1;
 
-namespace ReceipeConverter.src.Interface
+namespace RecipeConverter.src.Interface
 {
     internal interface IGoogleVisionAPI
     {

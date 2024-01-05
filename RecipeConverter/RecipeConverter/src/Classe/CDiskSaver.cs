@@ -1,8 +1,8 @@
-﻿using ReceipeConverter.src.Interface;
+﻿using RecipeConverter.src.Interface;
 using System.Text;
 
 
-namespace ReceipeConverter.src.Classe
+namespace RecipeConverter.src.Classe
 {
     internal class CDiskSaver : ITextSaver
     {

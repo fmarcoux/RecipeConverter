@@ -8,8 +8,9 @@
       "instruction": "Galettes  \nPlacer la grille au centre du four. Préchauffer le four à 180 °C (350 °F). Tapisser une plaque de cuisson d’un tapis de silicone ou de papier parchemin.  \nDans un bol, mélanger tous les ingrédients, sauf l’huile. Saler légèrement et poivrer.  \nDans une grande poêle antiadhésive à feu moyen, chauffer l’huile. À l’aide d’une cuillère à crème glacée de 60 ml (1/4 tasse), y déposer des boules de pâte en les écrasant légèrement. Lorsque les galettes sont bien dorées, les retourner délicatement à l’aide d’une spatule. Éponger les galettes sur du papier absorbant avant de les déposer sur la plaque.  \nCuire au four 10 minutes ou jusqu’à ce que les galettes soient bien cuites.  \nGarniture  \nEntre-temps, dans un petit bol, mélanger le tzatziki et la menthe. Saler et poivrer. Servir les galettes chaudes ou froides avec le tzatziki. Accompagner d’une salade verte, si désiré.",
       "ingredients": [
         {
+          "original_text": "250 g (2 tasses) de patate douce pelee et rapee",
           "food": {
-            "name": "YII pelée et râpée",
+            "name": "YII pelee et rapee",
             "description": "",
             "ignore_shopping": false
           },
@@ -17,8 +18,7 @@
             "name": "g"
           },
           "amount": 250.0,
-          "note": "44 tasses",
-          "original_text": "250 g (2 tasses) de patate douce pelée et râpée"
+          "note": "44 tasses"
         },
         {
           "food": {
@@ -33,7 +33,6 @@
           "note": "2 tasses",
           "original_text": "250 g (2 tasses) de patate douce pelée et râpée"
         }
-
       ]
     }
   ],

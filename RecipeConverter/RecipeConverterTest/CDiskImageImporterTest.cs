@@ -1,4 +1,4 @@
-using ReceipeConverter.src.Classe;
+using RecipeConverter.src.Classe;
 
 namespace RecipeConverterTest
 {

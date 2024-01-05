@@ -1,0 +1,99 @@
+{
+  "name": "string",
+  "description": "string",
+  "keywords": [
+    {
+      "name": "string",
+      "icon": "string",
+      "description": "string"
+    }
+  ],
+  "steps": [
+    {
+      "name": "string",
+      "instruction": "string",
+      "ingredients": [
+        {
+          "food": {
+            "name": "string",
+            "plural_name": "string",
+            "description": "string",
+            "recipe": {
+              "name": "string"
+            },
+            "food_onhand": "string",
+            "supermarket_category": {
+              "name": "string",
+              "description": "string"
+            },
+            "inherit_fields": [
+              {
+                "name": "string",
+                "field": "string"
+              }
+            ],
+            "ignore_shopping": true,
+            "substitute": [
+              {
+                "name": "string",
+                "plural_name": "string"
+              }
+            ],
+            "substitute_siblings": true,
+            "substitute_children": true,
+            "child_inherit_fields": [
+              {
+                "name": "string",
+                "field": "string"
+              }
+            ]
+          },
+          "unit": {
+            "name": "string",
+            "plural_name": "string",
+            "description": "string"
+          },
+          "amount": "1",
+          "note": "string",
+          "order": -2147483648,
+          "is_header": true,
+          "no_amount": true,
+          "original_text": "string",
+          "always_use_plural_unit": true,
+          "always_use_plural_food": true
+        }
+      ],
+      "time": -2147483648,
+      "order": -2147483648,
+      "show_as_header": true,
+      "file": {
+        "name": "Test user file",
+        "file": "http://192.168.1.108:8080/media/files/0b31120e-c582-4f69-9491-807ec8e873ac.jpg",
+        "id": 1
+      },
+      "step_recipe": 1
+    }
+  ],
+  "working_time": -2147483648,
+  "waiting_time": -2147483648,
+  "source_url": "string",
+  "internal": true,
+  "show_ingredient_overview": true,
+  "nutrition": {
+    "carbohydrates": "1",
+    "fats": "2",
+    "proteins": "3",
+    "calories": "4",
+    "source": "5"
+  },
+  "servings": -2147483648,
+  "file_path": "string",
+  "servings_text": "string",
+  "private": true,
+  "shared": [
+    {
+      "first_name": "string",
+      "last_name": "string"
+    }
+  ]
+}

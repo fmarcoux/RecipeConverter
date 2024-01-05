@@ -1,22 +1,26 @@
 ﻿using Google.Cloud.Vision.V1;
-using ReceipeConverter.src.Interface;
-using System;
-using System.Collections.Generic;
-using System.IO;
-using System.IO.Pipes;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using RecipeConverter.src.Interface;
 
-namespace ReceipeConverter.src.Classe
+namespace RecipeConverter.src.Classe
 {
-    internal class CBasicGoogleVisionAPITextDetector : IGoogleVisionAPI
+    public class CBasicGoogleVisionAPITextDetector : IGoogleVisionAPI
     {
         private readonly ImageAnnotatorClient m_imageAnnotatorClient;
         private readonly ImageContext m_imageContext;
         public CBasicGoogleVisionAPITextDetector() 
         {
             m_imageAnnotatorClient = ImageAnnotatorClient.Create();
+            m_imageContext = new()
+            {
+                TextDetectionParams = new TextDetectionParams(),
+                LanguageHints = { "fr" },
+            };
+            m_imageContext.TextDetectionParams.EnableTextDetectionConfidenceScore = true;
+        }
+
+        public CBasicGoogleVisionAPITextDetector(ImageAnnotatorClient client)
+        {
+            m_imageAnnotatorClient = client;
             m_imageContext = new()
             {
                 TextDetectionParams = new TextDetectionParams(),
